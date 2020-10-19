@@ -1,0 +1,10 @@
+{
+  "name": "garden3d",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/*.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
