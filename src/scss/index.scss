@@ -1,0 +1,8 @@
+@import 'config';
+@import 'reset', 'fontface', 'typography';
+@import '~@sanctucompu/basement/src/index';
+
+html,
+body {
+  font-family: $austin;
+}

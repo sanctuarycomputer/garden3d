@@ -1,0 +1,17 @@
+$colors: (
+  'black': #000000,
+  'white': #ffffff,
+  'blue': #1f35de,
+  'yellow': #eddb35,
+  'transparent': rgba(255, 255, 255, 0),
+);
+
+$spacing-units: 0rem, 0.25rem, 0.5rem, 0.75rem, 1rem, 1.5rem, 1.75rem, 2rem, 2.5rem, 3rem, 3.5rem,
+  4rem, 5rem, 5.75rem, 6rem, 8rem, 10rem;
+
+$breakpoints: (
+  'xs': 415px,
+  'sm': 834px,
+  'md': 1400px,
+  'lg': 1600px,
+);
