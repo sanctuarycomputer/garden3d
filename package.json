@@ -2,7 +2,8 @@
   "name": "garden3d",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/*.html"
+    "start": "parcel src/*.html",
+    "build": "NODE_ENV=production parcel build src/*.html"
   },
   "devDependencies": {
     "husky": "^4.3.0",

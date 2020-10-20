@@ -1,0 +1,50 @@
+version: 2.1
+
+defaults: &defaults
+  working_directory: ~/garden3d
+  docker:
+    - image: circleci/node:10-browsers
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/garden3d
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+      - run: NODE_ENV=production CI="" yarn build
+      - persist_to_workspace:
+          root: .
+          paths: .
+
+  deploy-featurepeek:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/garden3d
+      - checkout
+      - run:
+          name: Create Preview Link
+          command: bash <(curl -s https://peek.run/ci)
+
+workflows:
+  build:
+    jobs:
+      - build
+      - deploy-featurepeek:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore:
+                - main
+                - production
