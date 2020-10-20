@@ -1,1 +1,1 @@
-console.log("JS Initialized")
+console.log('JS Initialized');
