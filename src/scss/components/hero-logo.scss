@@ -1,0 +1,23 @@
+.HeroLogo {
+  position: relative;
+  color: color('blue');
+
+  &__3d {
+    position: absolute;
+    left: 65%;
+    top: 15%;
+    width: 9vw;
+    max-width: 200px;
+    animation: rotate3d linear 4.5s infinite;
+  }
+
+  @keyframes rotate3d {
+    0% {
+      transform: rotate3d(1, 0, 1, 0deg);
+    }
+
+    100% {
+      transform: rotate3d(1, 0, 1, 360deg);
+    }
+  }
+}

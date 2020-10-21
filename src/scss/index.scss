@@ -1,8 +1,24 @@
 @import 'config';
 @import 'reset', 'fontface', 'typography';
 @import '~@sanctucompu/basement/src/index';
+@import 'components/hero-logo';
 
 html,
 body {
   font-family: $austin;
+  height: 100%;
+}
+
+.Body {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &--good {
+    background-image: url('/assets/bg-good.png');
+  }
+
+  &--evil {
+    background-image: url('/assets/bg-evil.png');
+  }
 }
