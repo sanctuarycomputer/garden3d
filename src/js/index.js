@@ -1,1 +1,3 @@
-console.log('JS Initialized');
+'use strict';
+
+import './theme';
