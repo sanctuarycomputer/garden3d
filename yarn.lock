@@ -2508,6 +2508,11 @@ fastparse@^1.1.2:
   resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.2.tgz#91728c5a5942eced8531283c79441ee4122c35a9"
   integrity sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==
 
+fclone@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/fclone/-/fclone-1.0.11.tgz#10e85da38bfea7fc599341c296ee1d77266ee640"
+  integrity sha1-EOhdo4v+p/xZk0HClu4ddyZu5kA=
+
 figures@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-3.2.0.tgz#625c18bd293c604dc4a8ddb2febf0c88341746af"
@@ -4510,6 +4515,24 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.11, postcss@^7.0.17, postcss@^7.0.2
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+posthtml-expressions@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/posthtml-expressions/-/posthtml-expressions-1.5.0.tgz#e73f3fdf8a2dfe72205fc87a32f0c6504001156f"
+  integrity sha512-fjdaZTexW783E8W7ozfARX9sFHqldCZbsSkJJNkC6fcXT+55raZtSSLOTACbCwk1kVu5KGQy1ugw3QA0ekDa4Q==
+  dependencies:
+    fclone "^1.0.11"
+    posthtml-parser "^0.5.0"
+    posthtml-render "^1.2.3"
+
+posthtml-include@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/posthtml-include/-/posthtml-include-1.5.0.tgz#720410ed7bae16c37b5898d8e4454ee1e838afb0"
+  integrity sha512-YRsPuUD1r0OsJGmG2/9dD998ccbpeMwVO6YWxaVlcyVcA71UtGt/VSqf8ZHqYLggaMHcLi4/1E7aVZON7Mnj9A==
+  dependencies:
+    posthtml "^0.13.3"
+    posthtml-expressions "^1.5.0"
+    posthtml-parser "^0.5.0"
+
 posthtml-parser@^0.4.0, posthtml-parser@^0.4.1:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/posthtml-parser/-/posthtml-parser-0.4.2.tgz#a132bbdf0cd4bc199d34f322f5c1599385d7c6c1"
@@ -4537,7 +4560,7 @@ posthtml@^0.11.2:
     posthtml-parser "^0.4.1"
     posthtml-render "^1.1.5"
 
-posthtml@^0.13.4:
+posthtml@^0.13.3, posthtml@^0.13.4:
   version "0.13.4"
   resolved "https://registry.yarnpkg.com/posthtml/-/posthtml-0.13.4.tgz#ad81b3fa62b85f81ccdb5710f4ec375a4ed94934"
   integrity sha512-i2oTo/+dwXGC6zaAQSF6WZEQSbEqu10hsvg01DWzGAfZmy31Iiy9ktPh9nnXDfZiYytjxTIvxoK4TI0uk4QWpw==
