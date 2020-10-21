@@ -8,16 +8,16 @@
     top: 15%;
     width: 9vw;
     max-width: 200px;
-    animation: rotate3d linear 4s infinite;
+    animation: rotate3d linear 4.5s infinite;
   }
 
   @keyframes rotate3d {
     0% {
-      transform: perspective(300px) rotateX(0deg) rotateZ(0deg);
+      transform: rotate3d(1, 0, 1, 0deg);
     }
 
     100% {
-      transform: perspective(300px) rotateX(360deg) rotateZ(360deg);
+      transform: rotate3d(1, 0, 1, 360deg);
     }
   }
 }
