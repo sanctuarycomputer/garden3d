@@ -1,0 +1,27 @@
+/** Good Theme */
+[data-theme='good'] {
+  --fill-color: #{color('blue')};
+  --text-color: #{color('blue')};
+
+  .Background--good {
+    opacity: 1;
+  }
+
+  .Background--evil {
+    opacity: 0;
+  }
+}
+
+/** Evil Theme */
+[data-theme='evil'] {
+  --fill-color: #{color('yellow')};
+  --text-color: #{color('yellow')};
+
+  .Background--good {
+    opacity: 0;
+  }
+
+  .Background--evil {
+    opacity: 1;
+  }
+}

@@ -1,6 +1,6 @@
 .HeroLogo {
   position: relative;
-  color: color('blue');
+  color: var(--fill-color);
 
   &__3d {
     position: absolute;
