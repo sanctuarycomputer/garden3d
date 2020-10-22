@@ -1,0 +1,69 @@
+.Hero {
+  position: relative;
+  color: var(--fill-color);
+
+  .AudioIcon {
+    position: absolute;
+    bottom: -50px;
+    right: 0px;
+
+    @include media('md-up') {
+      bottom: auto;
+      top: 0;
+    }
+
+    &__path {
+      stroke: currentColor;
+    }
+
+    &--active {
+      .AudioIcon__path {
+        stroke: currentColor;
+        fill: currentColor;
+      }
+    }
+  }
+
+  &__3d {
+    position: absolute;
+    left: 65%;
+    top: 15%;
+    width: 9vw;
+
+    &--front {
+      animation: rotate3d--front linear 4.5s infinite;
+    }
+
+    &--back {
+      animation: rotate3d--back linear 4.5s infinite;
+    }
+  }
+}
+
+@keyframes rotate3d--front {
+  0% {
+    transform: rotate3d(1, 0, 1, 0deg) translateZ(0px);
+  }
+
+  50% {
+    transform: rotate3d(1, 0, 1, 180deg) translateZ(0px);
+  }
+
+  100% {
+    transform: rotate3d(1, 0, 1, 360deg) translateZ(0px);
+  }
+}
+
+@keyframes rotate3d--back {
+  0% {
+    transform: rotate3d(1, 0, 1, 0deg) translateZ(1vw);
+  }
+
+  50% {
+    transform: rotate3d(1, 0, 1, 180deg) translateZ(1vw);
+  }
+
+  100% {
+    transform: rotate3d(1, 0, 1, 360deg) translateZ(1vw);
+  }
+}
