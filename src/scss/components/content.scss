@@ -1,0 +1,40 @@
+.Content {
+  color: var(--text-color);
+
+  .Garden3d {
+    svg {
+      position: relative;
+      top: 0.125rem;
+      height: 0.9375rem;
+      width: auto;
+
+      @include media('md-up') {
+        position: initial;
+        top: 0;
+        height: auto;
+      }
+    }
+  }
+
+  .SanctuCompu {
+    svg {
+      position: relative;
+      top: 0.0625rem;
+    }
+  }
+
+  .XXIX {
+    svg {
+      position: relative;
+      top: 0.0625rem;
+    }
+  }
+
+  .Contact {
+    &__audio {
+      svg {
+        width: 1.375rem;
+      }
+    }
+  }
+}
