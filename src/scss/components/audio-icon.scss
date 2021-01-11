@@ -1,0 +1,12 @@
+.AudioIcon {
+  &__path {
+    stroke: currentColor;
+  }
+
+  &--active {
+    .AudioIcon__path {
+      stroke: currentColor;
+      fill: currentColor;
+    }
+  }
+}

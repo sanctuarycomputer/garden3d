@@ -1,10 +1,9 @@
 @import 'config';
 @import '~@sanctucompu/basement/src/index';
-@import 'reset', 'fontface', 'typography', 'theme';
-@import 'components/hero', 'components/background';
+@import 'reset', 'typography', 'button', 'theme';
+@import 'components/hero', 'components/background', 'components/content', 'components/audio-icon';
 
 html,
 body {
-  font-family: $austin;
   height: 100%;
 }

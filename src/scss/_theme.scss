@@ -2,6 +2,7 @@
 [data-theme='good'] {
   --fill-color: #{color('blue')};
   --text-color: #{color('blue')};
+  --hover-text-color: #{color('white')};
 
   .Background--good {
     opacity: 1;
@@ -16,6 +17,7 @@
 [data-theme='evil'] {
   --fill-color: #{color('yellow')};
   --text-color: #{color('yellow')};
+  --hover-text-color: #{color('black')};
 
   .Background--good {
     opacity: 0;

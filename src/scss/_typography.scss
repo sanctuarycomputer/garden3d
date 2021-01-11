@@ -1,1 +1,7 @@
-$austin: 'Austin', 'Times New Roman', Times, serif;
+$atlas: 'Atlas Grotesk Web', sans-serif;
+
+.body,
+%body {
+  font-family: $atlas;
+  font-size: 0.9375rem;
+}

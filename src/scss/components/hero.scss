@@ -2,7 +2,7 @@
   position: relative;
   color: var(--fill-color);
 
-  .AudioIcon {
+  &__audio {
     position: absolute;
     bottom: -50px;
     right: 0px;
@@ -10,17 +10,6 @@
     @include media('md-up') {
       bottom: auto;
       top: 0;
-    }
-
-    &__path {
-      stroke: currentColor;
-    }
-
-    &--active {
-      .AudioIcon__path {
-        stroke: currentColor;
-        fill: currentColor;
-      }
     }
   }
 

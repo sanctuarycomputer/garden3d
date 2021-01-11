@@ -1,0 +1,14 @@
+.Button {
+  cursor: pointer;
+
+  &--pill {
+    border: 1px solid #{var(--fill-color)};
+    border-radius: 50px;
+    padding: 0.15rem 0.5rem;
+
+    &:hover {
+      background-color: #{var(--fill-color)};
+      color: var(--hover-text-color);
+    }
+  }
+}

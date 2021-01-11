@@ -1,20 +1,6 @@
 <div class="Hero">
-  <span id="AudioTrigger">
-    <svg
-      class="AudioIcon"
-      xmlns="http://www.w3.org/2000/svg"
-      width="42"
-      height="47"
-      viewBox="0 0 42 47"
-    >
-      <g fill="none" fill-rule="evenodd" transform="translate(.807 1.235)">
-        <path
-          class="AudioIcon__path"
-          class="AudioIcon__border"
-          d="M25.7734,42.4415611 L19.5283,36.2960611 C17.9434,34.7393611 15.8086,33.8653611 13.5835,33.8653611 L8.4756,33.8653611 C3.7949,33.8653611 0,30.0704611 0,25.3868611 L0,19.5040611 C0,14.8204611 3.7949,11.0284611 8.4756,11.0284611 L13.5835,11.0284611 C15.8086,11.0284611 17.9434,10.1524611 19.5283,8.59096106 L25.7734,2.45036106 C31.1338,-2.82113894 40.1943,0.974761057 40.1943,8.49136106 L40.1943,36.3975611 C40.1943,43.9141611 31.1338,47.7120611 25.7734,42.4415611 Z"
-        />
-      </g>
-    </svg>
+  <span class="Hero__audio none xs:inline">
+    <include src="./components/audio-trigger.html"></include>
   </span>
 
   <!-- Start Logo - Garden -->
@@ -73,7 +59,7 @@
   </svg>
   <!-- End Logo - Garden -->
 
-  <span id="theme-toggle">
+  <span data-trigger="theme-toggle">
     <!-- Start Logo - 3d -->
     <!-- Start 3d - front -->
     <svg
