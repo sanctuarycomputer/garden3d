@@ -5,7 +5,7 @@ import audio from './audio';
 const GOOD = 'good';
 const EVIL = 'evil';
 
-const themeToggle = document.getElementById('theme-toggle');
+const themeToggle = document.querySelector('[data-trigger="theme-toggle"]');
 
 const handleToggleTheme = function () {
   const activeTheme = document.body.getAttribute('data-theme');
