@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <include src="./components/head.html"></include>
-  <body data-theme="good" class="Body Body--good p_5 md:p1_5">
+  <body data-theme="good" class="Body Body--good p1 md:p1_5">
     <div class="h100 flex flex-col xs:justify-between">
       <include src="./components/hero.html"></include>
       <include src="./components/background.html"></include>
 
-      <div class="Content body flex flex-col sm:flex-row">
-        <div class="Content__info flex flex-col xs:flex-row col-12 sm:col-6">
-          <div class="xs:pr2">
+      <div
+        class="Content body flex flex-col justify-between xs:justify-start h100 xs:hauto sm:flex-row"
+      >
+        <div class="Content__info flex flex-col sm:flex-row col-12 sm:col-6 mb6_25 sm:mb0">
+          <div class="sm:pr_625">
             <p class="mb1_25 md:flex">
               <span class="Garden3d">
                 <svg
@@ -26,7 +28,7 @@
                 </svg>
               </span>
               <span class="pl_25">
-                (garden 3d) is the venture are of NYC based studios
+                (garden 3d) is the venture arm of NYC based studios
                 <span class="SanctuCompu">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +93,7 @@
             </p>
           </div>
 
-          <div class="xs:pl2">
+          <div class="sm:px_625">
             <p class="mb1_25">
               In 2020, were interested in chatting to people in the Renewable Energy, Sustainable
               Housing, Farming and Affordable Healthcare spaces.
@@ -102,14 +104,14 @@
 
             <div class="Contact flex items-center justify-between">
               <p><a class="Button Button--pill">DM HUGH</a> to discuss a potential partnership</p>
-              <span class="Contact__audio inline xs:none">
+              <span class="Contact__audio inline sm:none">
                 <include src="./components/audio-trigger.html"></include>
               </span>
             </div>
           </div>
         </div>
-        <div className="Content__product-grid col-12 sm:col-6">
-          <h2>Produce Grid goes here</h2>
+        <div class="Content__product-grid col-12 sm:col-6 sm:pl_625 pb1 xs:pb0">
+          <include src="./components/product-grid.html"></include>
         </div>
       </div>
     </div>

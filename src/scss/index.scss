@@ -1,9 +1,16 @@
 @import 'config';
 @import '~@sanctucompu/basement/src/index';
 @import 'reset', 'typography', 'button', 'theme';
-@import 'components/hero', 'components/background', 'components/content', 'components/audio-icon';
+@import 'components/hero', 'components/background', 'components/content', 'components/audio-icon',
+  'components/product-grid';
 
 html,
 body {
   height: 100%;
+  overflow-y: auto;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
 }
