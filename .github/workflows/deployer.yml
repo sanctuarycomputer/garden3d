@@ -4,6 +4,7 @@ on: push
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -30,7 +31,12 @@ jobs:
       - name: Build frontend assets
         run: NODE_ENV=production yarn build
 
-      - name: Ping FeaturePeek
-        run: bash <(curl -s https://peek.run/ci)
-        env:
-          CI: true
+    feature-peek:
+      name: Deploy feature peek
+      runs-on: ubuntu-latest
+      needs: build
+      steps:
+        - name: Ping FeaturePeek
+          run: bash <(curl -s https://peek.run/ci)
+          env:
+            CI: true
