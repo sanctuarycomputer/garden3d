@@ -3,5 +3,9 @@ $atlas: 'Atlas Grotesk Web', sans-serif;
 .body,
 %body {
   font-family: $atlas;
-  font-size: 0.9375rem;
+  font-size: 0.8125rem;
+
+  @include media('md-up') {
+    font-size: 0.9375rem;
+  }
 }
