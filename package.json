@@ -6,7 +6,8 @@
     "build": "NODE_ENV=production parcel build src/*.html"
   },
   "dependencies": {
-    "@sanctucompu/basement": "^1.2.0"
+    "@sanctucompu/basement": "^1.2.0",
+    "firebase-tools": "^9.2.2"
   },
   "devDependencies": {
     "husky": "^4.3.0",
