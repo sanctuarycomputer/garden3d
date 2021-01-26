@@ -1,5 +1,5 @@
 'use strict';
-
+import background from './background';
 import audio from './audio';
 
 const GOOD = 'good';
