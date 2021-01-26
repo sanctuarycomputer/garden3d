@@ -22,7 +22,6 @@ export default (function () {
     },
     state: {
       count: 0,
-      ready: false,
     },
     elements: {
       background: document.getElementById('Background'),
@@ -53,7 +52,6 @@ export default (function () {
     },
 
     animate() {
-      Background.state.ready = true;
       requestAnimationFrame(Background.animate);
 
       Background.pixi.displacementSprite.x = Background.state.count * 10;
