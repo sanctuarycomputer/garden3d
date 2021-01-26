@@ -6,7 +6,8 @@
     "build": "NODE_ENV=production parcel build src/*.html"
   },
   "dependencies": {
-    "@sanctucompu/basement": "^1.2.0"
+    "@sanctucompu/basement": "^1.2.0",
+    "pixi.js": "^5.3.7"
   },
   "devDependencies": {
     "husky": "^4.3.0",
