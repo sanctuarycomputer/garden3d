@@ -11,3 +11,13 @@
   --text-color: #{color('yellow')};
   --hover-text-color: #{color('black')};
 }
+
+.text-glow {
+  text-shadow: 0 0 5px var(--text-color);
+}
+
+.text-glow--hover {
+  &:hover {
+    text-shadow: 0 0 5px var(--hover-text-color);
+  }
+}
