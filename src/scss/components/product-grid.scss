@@ -9,6 +9,8 @@
 
   &__item {
     border: 1px solid #{var(--fill-color)};
+    color: #{var(--text-color)};
+    transition: $theme-transition;
 
     &:hover {
       background-color: #{var(--fill-color)};
