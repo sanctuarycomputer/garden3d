@@ -1,4 +1,5 @@
 .shimmer--good {
+  transition: $theme-transition;
   color: rgba(255, 255, 255, 0.1);
   background: gradient(
     linear,
@@ -44,6 +45,7 @@
 }
 
 .shimmer--evil {
+  transition: $theme-transition;
   color: rgba(255, 255, 255, 0.1);
   background: gradient(
     linear,
@@ -51,7 +53,7 @@
     right top,
     from(#eddb35),
     to(#eddb35),
-    color-stop(0.5, #fff)
+    color-stop(0.5, #000)
   );
   background: -webkit-gradient(
     linear,
@@ -59,7 +61,7 @@
     right top,
     from(#eddb35),
     to(#eddb35),
-    color-stop(0.5, #fff)
+    color-stop(0.5, #000)
   );
   background: -moz-gradient(
     linear,
@@ -67,7 +69,7 @@
     right top,
     from(#eddb35),
     to(#eddb35),
-    color-stop(0.5, #fff)
+    color-stop(0.5, #000)
   );
   background: gradient(
     linear,
@@ -75,7 +77,7 @@
     right top,
     from(#eddb35),
     to(#eddb35),
-    color-stop(0.5, #fff)
+    color-stop(0.5, #000)
   );
   background-size: 100px 110%;
   background-clip: text;

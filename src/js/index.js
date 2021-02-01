@@ -10,7 +10,7 @@ const themeToggle = document.querySelector('[data-trigger="theme-toggle"]');
 const handleToggleTheme = function () {
   const activeTheme = document.body.getAttribute('data-theme');
 
-  if (activeTheme === GOOD) {
+  if (activeTheme === Theme.GOOD) {
     document.body.setAttribute('data-theme', Theme.EVIL);
     shimmer.makeEvil();
     audio.makeEvil();
