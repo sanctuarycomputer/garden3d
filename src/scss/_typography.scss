@@ -1,11 +1,24 @@
 $atlas: 'Atlas Grotesk Web', sans-serif;
+$serif: serif;
 
-.body,
-%body {
-  font-family: $atlas;
+.text-body,
+%text-body {
   font-size: 0.8125rem;
 
   @include media('md-up') {
     font-size: 0.9375rem;
   }
+}
+
+.text-small,
+%text-small {
+  font-size: 0.75rem;
+}
+
+.sans-serif {
+  font-family: $atlas;
+}
+
+.serif {
+  font-family: $serif;
 }

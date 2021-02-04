@@ -1,7 +1,9 @@
 .ProductGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
   gap: 6px;
+  height: 100%;
 
   @include media('lg-up') {
     grid-template-columns: repeat(6, 1fr);
