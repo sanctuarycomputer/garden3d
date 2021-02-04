@@ -1,7 +1,7 @@
 'use strict';
 import background from './background';
 import audio from './audio';
-import { Operator, Theme } from './constants';
+import { Theme } from './constants';
 
 const themeToggle = document.querySelector('[data-trigger="theme-toggle"]');
 
@@ -11,11 +11,11 @@ const handleToggleTheme = function () {
   if (activeTheme === Theme.GOOD) {
     document.body.setAttribute('data-theme', Theme.EVIL);
     audio.makeEvil();
-    background.transitionSlide(1, Operator.ADD);
+    background.makeEvil();
   } else {
     document.body.setAttribute('data-theme', Theme.GOOD);
     audio.makeGood();
-    background.transitionSlide(2, Operator.SUBTRACT);
+    background.makeGood();
   }
 };
 
