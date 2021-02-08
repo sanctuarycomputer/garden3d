@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@alexbainter/indexed-db@^0.1.0", "@alexbainter/indexed-db@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@alexbainter/indexed-db/-/indexed-db-0.1.1.tgz#1d02101fd9f52c088092d912b734626b11a6fda5"
+  integrity sha512-+kSn+5k2ggxHW2cZkKLO8KnVM56IhzkR72z2n70rr0PMiBiYJeTViF0kY2FvE0nmLm79OQsc78ow9tsIdCKl2g==
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"
@@ -833,6 +838,13 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
+"@babel/runtime@^7.12.5":
+  version "7.12.13"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.13.tgz#0a21452352b02542db0ffb928ac2d3ca7cb6d66d"
+  integrity sha512-8+3UMPBrjFa/6TtKi/7sehPKqfAm4g6K+YQjyyFOLUTxzOngcRZTlAVY8sc2CORJYqdHQY8gRPHmn+qo15rCBw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@^7.4.4", "@babel/runtime@^7.8.4":
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.1.tgz#b4116a6b6711d010b2dad3b7b6e43bf1b9954740"
@@ -872,6 +884,548 @@
     "@babel/helper-validator-identifier" "^7.10.4"
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
+
+"@generative-music/make-piece-oxalis@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/make-piece-oxalis/-/make-piece-oxalis-4.5.0.tgz#4b2e445790dbc72e458469b0f11f528efdb20550"
+  integrity sha512-Su7+6lMSEmfRZGLe1qDX091Kh6x2GufU0H7YzNO6GfGGCh1cOFibuEI2jH+sMN0nNsEjoOIab7sIvQHbKYNidg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-420hz-gamma-waves-for-big-brain@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-420hz-gamma-waves-for-big-brain/-/piece-420hz-gamma-waves-for-big-brain-4.6.0.tgz#155da6b5b8af1f67c9a17e864330f06d764f6d06"
+  integrity sha512-goYqeSCswiwdoHNHSoIrN7GvYJuNAaTMZB9/b88x+XN7BrI1cBmXGm3MG0XPrGnskNlejQ7FmpULS4xQl2Pz4Q==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-a-viable-system@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-a-viable-system/-/piece-a-viable-system-4.6.0.tgz#60953cfdac2dc3baa7276da2f161f0394089017c"
+  integrity sha512-oJByvPf2UDjQQc/XzdvU+1HBvbNZUwob2T9elSuF+ELEVh4/S6MqbvE6qIGsjxjpSPMR3iWW3GwH/CaP/fZSQg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-above-the-rain@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-above-the-rain/-/piece-above-the-rain-4.5.0.tgz#c3fe23951e1ece65e3819930b153834fc18116ac"
+  integrity sha512-rj54NquzncViJW7ay2VAHPo+W4HtgsFeYPcQI7riQO16xxYHHGLN9nV79+mvwDuAZtXjAj2UsOQg6Yhpc26XvQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-agua-ravine@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-agua-ravine/-/piece-agua-ravine-4.6.0.tgz#97858bc39d04d724c797d3ffe4b32272feb80f97"
+  integrity sha512-ikXgRAZPdZkU1DjraiqWDepfxTNPKdW0JUGoSf/umJVvRu2+281ux94NHpBFqQiB/xu94IQ0ud9SOP331wdvHQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-aisatsana@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-aisatsana/-/piece-aisatsana-4.6.0.tgz#13ba2713ead79b6fe6ab746156db7726f54426c7"
+  integrity sha512-qBGfPrK8qYqDCxdoGSQ1PCt+t7axti5OwWB7BFHg6+jpf1f0buT7XDvMCFL/qY4RcAJJlagdSt/OuZLsExGZ2A==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+    markov-chains "^1.0.2"
+
+"@generative-music/piece-animalia-chordata@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-animalia-chordata/-/piece-animalia-chordata-4.6.0.tgz#3d340f07a451a8bdef94036cda2b49f84cab187f"
+  integrity sha512-1jI8ucyOIE8xgiBUB2rVRbHdXvN0yqDezcPzmaUDQ5afL65W19qgvFutHpEW7mOXyUUCY9MntYORLH6PpRDCkg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-apoapsis@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-apoapsis/-/piece-apoapsis-4.5.0.tgz#70f901cc8645681e81980b20a026fa588bbd94b8"
+  integrity sha512-IFQcFLpO5K4DXXQicYToaAKouk5UkraEfwLX3M4711FBkLA6u+wpBxkyd5MtdxUpDQYKZerTVIMQclV1WOQ1iA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-at-sunrise@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-at-sunrise/-/piece-at-sunrise-4.5.0.tgz#d6cf26d72acc72ca3ebec7742d2014a33f031116"
+  integrity sha512-S9rvX9C8mAfCLQoL8EU9gW8/fdXAPCQnyuV7eeDDijGoBggmhkjYX/3QvsXVKk97KLA/fhzQsbk3IbQmPJLAJg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-awash@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-awash/-/piece-awash-4.6.0.tgz#11536ec97b46f090c0bf157ab6a23a390006445b"
+  integrity sha512-E88XwcWQU9Fxxc16NACzU63r2Bkqs4DEzkvGdGDd0A7s1yP/BCJ4Uehe1cA7QVvOMHS6kEnIi7gVJsK4Vr8e8Q==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-beneath-waves@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-beneath-waves/-/piece-beneath-waves-4.5.0.tgz#a9a8483b2ba5c724d6b759e8b3fa1d8f86a9a2e2"
+  integrity sha512-CTte4qb+sK7YhWy2R2JXuA8M1i4BD4VkfmHwRU85WrLgx8Q3moyT7Mo5bp3RhB/31ujfplMrvCFVFqI+AJfUiQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-bhairav@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-bhairav/-/piece-bhairav-4.6.0.tgz#d1b62abc54cc5185dd8e1b9d5f433f4b4899c18d"
+  integrity sha512-G9GOEaUld+GHRRnfvFWM30KN3eguUWwch+mrehEfCHwrItlJkVlgWl2Q/SAPhbdy1BCjHEXKqK9oKwFm0C7+RA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-buttafingers@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-buttafingers/-/piece-buttafingers-4.5.0.tgz#fb81a3e9fab40afc79f5cf96a00dcbaae19af604"
+  integrity sha512-MeABx86iMM9wJjAbyTk6VeoUnbyLy6qnLjUiR68iRss7+VRM6QSwPhFGFsiKYThnlkEr86bk9vcIdRGG6jSz3Q==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-day-dream@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-day-dream/-/piece-day-dream-4.5.0.tgz#c076dd971895a9507af4f11680895bc5417f18c8"
+  integrity sha512-CX09o/QoXwdXhxX4IQsI8HRpJn3dsvWpXI73aVacPAp+ZCToNvUh/dLg89l3Ol1oBpjONa2q3dM7cIAGOEOkTA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-didgeridoobeats@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-didgeridoobeats/-/piece-didgeridoobeats-4.6.0.tgz#01a3127b3e9471df048bb5969f7d81a90de97e1c"
+  integrity sha512-TK8hn2M83ZcJJQycebEL+xyxU7WMz7Bo1vjFGhF81KhYpSsRpL4eIougGrOXIDjnd/npdgUAu2vgqSlRMKCW3A==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-documentary-films@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-documentary-films/-/piece-documentary-films-4.6.0.tgz#4a49c99de9b7383f2f09bbecd9935d640fd5d096"
+  integrity sha512-z2y05boryCl9H/7XzzzJhMOSl15KpWx1HQEfIn8ZCaD52IWiFHTbW5u7jT008F98JZP8WTYKECsUQeWYRSnwjg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-drones-2@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-drones-2/-/piece-drones-2-4.5.0.tgz#26117703cf954f13d9a32d9099c1fc2a7ec52216"
+  integrity sha512-t9FGPfqxPL28VvGNFjF+M7l83J0qg2RG4WQPyT3DcUa4Tb/eMkWzllMiyT9OvHhc15XTuv4WtA6yMO6etz/zkA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-drones@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-drones/-/piece-drones-4.5.0.tgz#c54d7e57d08d4e602d4b72d5a35bbf1760005eda"
+  integrity sha512-een6hfSnQusgC5yxzawUw5uJA1zskokG4DPCLbyfc20nPsGztfNyGSYi3QVVJ5hQQB/8hlTUA8gYf+lOQEU3ug==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-eno-machine@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-eno-machine/-/piece-eno-machine-4.6.0.tgz#78171c7afb51d7a661459d591287fd9e904ab5ee"
+  integrity sha512-pkcFupFuSNMEswRPovp/yo21ixXLRHvXm39BYdKFT5T8MEP7vXH46u5T+MrfF241KbMzUl4Tt4oe3dq0hD407A==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-enough@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-enough/-/piece-enough-4.6.0.tgz#3bb61dfe266c2e0326d25c4c917b0f315fb0fb70"
+  integrity sha512-IO2/HTwnwYLw2gynI+7g7HDmsYJbKjqLedJShcy2ED/oJq3akbf4bFp2mTSHR5/FNNmtrPg1XZsWTN1dTVck9w==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-expand-collapse@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-expand-collapse/-/piece-expand-collapse-4.6.0.tgz#d54d3762ef1e20aff1a829e77758f4bb4d3be885"
+  integrity sha512-Vr8axwW+8g/ufeoT4CFdyZW9JKCj0TwG5R36HEshXy4xG3Aqyf+TSCfr3Hi7lIuYWXa6MgQcb6J4m6Ohn6I3rA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-eyes-closed@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-eyes-closed/-/piece-eyes-closed-4.5.0.tgz#5cf267e29c472281ad12e47a42291b51c488db45"
+  integrity sha512-UDt3o+OPY96Kz9uHWLVr1aEtsPBqd8eHt5NCkdj5equOPx9eN5IzUxuOWh8uQgpu5bNhqp1eOKneQNh/JvLvtA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-homage@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-homage/-/piece-homage-4.5.0.tgz#4fb35295660875b4c053eec35c9024bb7832290c"
+  integrity sha512-QUtngAlSVaQgluy35nJPGBCKtNafUDuUkG3Tk6KMkVySOqPnjYY0BOiXdq4ReXNx2eWf4IyMiQuo9vAxzNpFZQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-impact@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-impact/-/piece-impact-4.6.0.tgz#94178ab2031ea5d2172aebde4ddf7abae4f764ff"
+  integrity sha512-Dl8fQuQdhda93dcXMa+7dHbMiDIDuUSdb7PY0ytxpqeyuGkGc7+hnsqbL1IZmV32xIA8QPm3bKofsAxr95XbDg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-last-transit@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-last-transit/-/piece-last-transit-4.6.0.tgz#37f78db26f25a999c7bbfea155fc9e9cb9fcc5fa"
+  integrity sha512-evW5SicCjtFyu8qR9/uUF36vAj3Lk06TGXI4Pd2xWpLbEg6j/Faq7k93unyQjgs7UgQhBGvQR57iZbt4Ns3kqw==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-lemniscate@^4.6.1":
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-lemniscate/-/piece-lemniscate-4.6.1.tgz#cc81e94674b7368c6641a35546b651a8427050cb"
+  integrity sha512-lOnwBACe7kj8W+Yc9MtmoTWpIuTZup5LN65higJMYlwHQ612f2Dxwa1Fv8ePI+DpsNbRyIke46luWpKlyijcoQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-little-bells@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-little-bells/-/piece-little-bells-4.6.0.tgz#1d27ff5af9bd2ce6ea35434e452f40a5ee166660"
+  integrity sha512-/qRhMYSSfD2Dl6cKswfgfC+IPomWoCtLu9P3OPhrl3o2gk296qJQbiecZD0ybeVTxZM8WLjSpp4QbSvYH+7+FA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-lullaby@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-lullaby/-/piece-lullaby-4.6.0.tgz#49a56b7d3497e8212399b29b2267952b9247412d"
+  integrity sha512-yjTcgjfXasVO+sOtXDjnDSqoppY8gsM+uOqv2+f9Lf6Y4bUipcZLWp4oyTv8IoYSRqGbjX28KUtWxhUHOuC8IQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-meditation@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-meditation/-/piece-meditation-4.6.0.tgz#8c0bd450400501fdc15ac603b0af0b1a68c45310"
+  integrity sha512-cJB1FL7WUC9nOwezW9He6nbv6oJXSNYj2RI3MtIGqn1VwrOk3nWWBcslcc6p4ETz1fU6xTscuj6y/2ehzwAnWA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-moment@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-moment/-/piece-moment-4.6.0.tgz#ba56f17da53a029d83341190482186d1fc422148"
+  integrity sha512-wumA97XwoIzq12KR1DVAb8DDScfuD5pdL0xYp3mDXI9hwu9hys5AWS5XB90Ou85xXC/vx2xxIN+OLgRo2re25g==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-nakaii@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-nakaii/-/piece-nakaii-4.5.0.tgz#1964c411843d78a13493f53d75ebd36186ecb5f5"
+  integrity sha512-x4ifM50QLrJdbHSVTBrP7wQZVDr61LeID9VTEBKFexcBI58wtg4PPiyRPpm5S66ws4DL0oVpYGfTnch+1p7vvQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-neuroplasticity@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-neuroplasticity/-/piece-neuroplasticity-4.6.0.tgz#23aca5498ecda2e1de90e29dd8ec310a15d6a510"
+  integrity sha512-FP6oWJL16/reAN0C2XOQGVKDmJUCsZVkrQ8MU6taLCpWW8gZEnueHp/Kf1gGqTZfQDycTbpK7NTX24UIxOkK4Q==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-no-refrain@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-no-refrain/-/piece-no-refrain-4.6.0.tgz#28430e6f923ee26de3450976165283c6c4df28ba"
+  integrity sha512-PvIHW6DZz4/oYcmtWc+7TU2U9YuBTpGwG24iHrzI0Ro6wRzRifWkBTXd+REz1zU6IEE3ljLLw4Va+5aA+eRTPA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-observable-streams@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-observable-streams/-/piece-observable-streams-4.6.0.tgz#3b54296484cb27c423fc90e46451cb4ad4f436f2"
+  integrity sha512-BPjeAncd2jcNqXREET8WWPzvOZ1KOVIZZZG7xvNrPeCDW+bO00IyVhPAfwKtsHHtsgDA23tYkFfCgc4bNq2C1w==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+    rxjs "^6.4.0"
+    tonal "^2.2.1"
+
+"@generative-music/piece-otherness@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-otherness/-/piece-otherness-4.5.0.tgz#2a2d87e46bc6e31bc407b74546cea2ad66e88e21"
+  integrity sha512-gUol/q8K6Lk5Qz0Sw2PKSR6jXFRLvIivTLf5fySROdtbXrTempyBdfUW3qQlboDvntC8yMsrg8mp5ErnToX8sg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-oxalis-1@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-oxalis-1/-/piece-oxalis-1-4.6.0.tgz#d855f1e97c73331668744c5254d1afb96ec058ab"
+  integrity sha512-khsl4yO+heqk8Skt4MC7d0DIrNt65Va58F77BZF6+fSOEDaorba0wxsTU3lddfoOtWoDxSbwUAlj7uA5i2kjjg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/make-piece-oxalis" "^4.5.0"
+
+"@generative-music/piece-peace@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-peace/-/piece-peace-4.6.0.tgz#c2eb7a35e1d2f5936e42af2334e92158eaaf21c3"
+  integrity sha512-eUwasFbP63+4m6qShhbrOw6NdbBlMbiHD3lx2cACRYTg7LuSeFSodkcwGLsPgfYwV6+CzN3oPbxelSknnF+8rg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-pinwheels@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-pinwheels/-/piece-pinwheels-4.6.0.tgz#d156e4f571709549482206a56cb21e8791277fb4"
+  integrity sha512-Il41TARZHwDv2D1pefXzhm3/XMA28uWdZ3vPwhpRHBVRCXCpiLnWCAM/jQUclwTGUoPSqBP5AUgSu4/BnCu08A==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+    shuffle-array "^1.0.1"
+
+"@generative-music/piece-pulse-code-modulation@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-pulse-code-modulation/-/piece-pulse-code-modulation-4.6.0.tgz#4cbf87e05dd7bedf8c09cdeefb838a5b9a18219c"
+  integrity sha512-3wgD2ejJyJVGt1nYtus+rY4YCh2vxC1n4TUwvBM36HbLbqXGGLXw6KqIiczKZ6wd4jf3CSyVYixdoKTLuHaP7Q==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-remembering@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-remembering/-/piece-remembering-4.6.0.tgz#b159dd66f1d58d2e1cf210d65dbd4b29d07eb92e"
+  integrity sha512-+6yof0bvkErcTJZ4SeJxR7anszt2UD/xdbYnxwKG012wypLyNSEnl31C13izaH5Tb40KGX+AVd0ChVaaPpwmeg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-return-to-form@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-return-to-form/-/piece-return-to-form-4.6.0.tgz#7281f22eac7ab5eeb1bb6c3ec62b3e21190987a3"
+  integrity sha512-9Dc5UwqjtklM4+ac6gbhcA6DM/7k1I+8NjX7QcPMP6KQTx+vIQACPQXb1hWdnPQkzHP6LoFvlzHHNLl+oHaqTQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-ritual@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-ritual/-/piece-ritual-4.6.0.tgz#07d4c6dc5f488fa38140a1441e82272d558062de"
+  integrity sha512-tjpHoEae61XwQ1KOoP4p3v/NRtpZqKn7FnrLOzeJtS+7HuCjSCdhBQX3rsbuzU3ysKB+OyXT3moLLtVl+syF3g==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+    tonal "^2.2.2"
+
+"@generative-music/piece-sevenths@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-sevenths/-/piece-sevenths-4.6.0.tgz#6c9516524a6693652f3a0ec1759d560b648d1c36"
+  integrity sha512-y4KsoPNCBlqW+oXuh7zWqKuykbZWhMH0wNdszn4to9n36Ch5D2SFhWATvhx8UgVjREKhKtovXcWoUPdqzpbp0Q==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-soundtrack@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-soundtrack/-/piece-soundtrack-4.6.0.tgz#3a272ba6f4b21be6178056ff442e1538bfdc9bca"
+  integrity sha512-j2EXZReeJtg6KOSgD6r0/dw9pRIAFpHwBkYhi/p/7/P/M+HXxYWASjvAmGD5PXScIuIi/KtEoAmg6CKipdl9Nw==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-spring-again@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-spring-again/-/piece-spring-again-4.6.0.tgz#b4d866a5ad91b249ab2667ea1bf2042b058b756f"
+  integrity sha512-ayIURuZfL14U3G3XCyQEFSw7vtnoBb6uzshVbclg1steYsq2BwetpwieekOBjESqfLbEWbiJoDzO5H5A9/LynQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-stratospheric@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-stratospheric/-/piece-stratospheric-4.6.0.tgz#460decfb9b01481865c7b0f588d0ca06a48bacd8"
+  integrity sha512-DO1152P7mZjqs5/yKPW4X6N8p8vcpMaqVoDom/ieF+CHV5gvn4V595v4Q89DJKQcE5wbYsU+vWuwfy8TZHmulw==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-stream-of-consciousness@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-stream-of-consciousness/-/piece-stream-of-consciousness-4.6.0.tgz#17bd8d824ca457251053fafa8bbc0692b4a96e09"
+  integrity sha512-mjUovg2tmUfONri0z8zMDB4rCu+WLJO/AXNwPpVgA0DHXvhJnqvzvP+MjYBeZdAo4GgDQVgpBDWLbVGpQDprOg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-substrate@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-substrate/-/piece-substrate-4.5.0.tgz#950d24c9bbf293ff543a758c86557ae1fe994976"
+  integrity sha512-2Lpdo98m3aenMpTfqrO5yfIQ1CS/hdEHwkTUOmcK7NbshLz6+a/xi4VkkrLADnpNrNMYlgHl+WEf+IeMKk2J9A==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-timbral-oscillations@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-timbral-oscillations/-/piece-timbral-oscillations-4.6.0.tgz#212aa76744febefb0b34324d86d7ebb49478aa87"
+  integrity sha512-hcbIeRAGZKbPFgMeBHKvZxFC588dqJY9AAeOCMxQcQrLXWCGmy9TL0f1jx79sEG++grCnx9Hw9Fu7luY66ALzQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-townsend@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-townsend/-/piece-townsend-4.6.0.tgz#ccfdf44a172fc55829ad3c863158998130b6b842"
+  integrity sha512-agjB4N0aquBNV76e96ZFb2Bn04HGCYz/5gvdEFifAol5Iv9IvmUrQd7fwy3GJ2K42SJehfld2r/dV+9KsqxeYw==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-transmission@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-transmission/-/piece-transmission-4.6.0.tgz#8453ebd5f1be43d3b8ca4e71a4f7af99fdf18bab"
+  integrity sha512-vDpTq6PF/PADCHLZAVB9d45c4RxsQkryljml3oKWvwlvVz6FsWBIn0HLRq+zqiGBHaAuOMdtoF58Y+GvDvLSQg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-trees@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-trees/-/piece-trees-4.6.0.tgz#56914ba241b2ce06b5bd4025531495b8cb5e538c"
+  integrity sha512-L6yzmbnEwvXx4yuMjQ3K9MhzUtJL2Zuc422rKa/YgyLmOqwtuqnDFkZMDh2N2Fep7RH7A4OkXTSQs+kJWbYBEQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-uun@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-uun/-/piece-uun-4.6.0.tgz#36ea6c63d16e4a95d65f6d91b09629d76e826076"
+  integrity sha512-4UhHESiIrpI4jTcOQ19JSttnjWq4sw9f95dt0/alO87JS6j5MNHSS3mHAgiC/9OyMlZtP1WPQUyeCNEuw44peg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-western-medicine@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-western-medicine/-/piece-western-medicine-4.5.0.tgz#f78926dc63d07030ab611510ef6419fda98b3421"
+  integrity sha512-0c6HLA5P1GtHmFzeX4Qk22DFLcEaCcMiZ/+AwUt5+8pWys+KJ/lckubQRdUlYX4rqlOI980XIwWa5Jw7/tyc4w==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-yesterday@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-yesterday/-/piece-yesterday-4.6.0.tgz#4730deb291fddf4ec544c8d023977993d4f69b76"
+  integrity sha512-SGNeG04eK/qJH/imGldVI7xXbdnqUOosE/rl1jKjJh9Nepq9m+RuU03HzJ+HXJy84Z2JVEwGRyCzZJMTLnUAXQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/piece-zed@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/piece-zed/-/piece-zed-4.5.0.tgz#b0165b8c0b5d571394c00a5c6ca473da85052a96"
+  integrity sha512-jS52ZgsNhAFQS4y2G3y2MB3Pmcws9Hb6PIVSG2e+obdOF1KROp9hpvWPbg10MVzOPtymuWLoH6oH/LpiTSSfWA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/utilities" "^4.5.0"
+
+"@generative-music/pieces-alex-bainter@^4.6.1":
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/@generative-music/pieces-alex-bainter/-/pieces-alex-bainter-4.6.1.tgz#2e74cf37a85eb0bd43da39b0597690664d6d9ac6"
+  integrity sha512-0Wb769UYinQSQcGQ3nwqdBxtMRPi9TkNGTOCpvJxOAdZlRo+7+YqxDi7tBkkSJGKHp6hNDOU4PgXutY+OUQ4Sg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@generative-music/piece-420hz-gamma-waves-for-big-brain" "^4.6.0"
+    "@generative-music/piece-a-viable-system" "^4.6.0"
+    "@generative-music/piece-above-the-rain" "^4.5.0"
+    "@generative-music/piece-agua-ravine" "^4.6.0"
+    "@generative-music/piece-aisatsana" "^4.6.0"
+    "@generative-music/piece-animalia-chordata" "^4.6.0"
+    "@generative-music/piece-apoapsis" "^4.5.0"
+    "@generative-music/piece-at-sunrise" "^4.5.0"
+    "@generative-music/piece-awash" "^4.6.0"
+    "@generative-music/piece-beneath-waves" "^4.5.0"
+    "@generative-music/piece-bhairav" "^4.6.0"
+    "@generative-music/piece-buttafingers" "^4.5.0"
+    "@generative-music/piece-day-dream" "^4.5.0"
+    "@generative-music/piece-didgeridoobeats" "^4.6.0"
+    "@generative-music/piece-documentary-films" "^4.6.0"
+    "@generative-music/piece-drones" "^4.5.0"
+    "@generative-music/piece-drones-2" "^4.5.0"
+    "@generative-music/piece-eno-machine" "^4.6.0"
+    "@generative-music/piece-enough" "^4.6.0"
+    "@generative-music/piece-expand-collapse" "^4.6.0"
+    "@generative-music/piece-eyes-closed" "^4.5.0"
+    "@generative-music/piece-homage" "^4.5.0"
+    "@generative-music/piece-impact" "^4.6.0"
+    "@generative-music/piece-last-transit" "^4.6.0"
+    "@generative-music/piece-lemniscate" "^4.6.1"
+    "@generative-music/piece-little-bells" "^4.6.0"
+    "@generative-music/piece-lullaby" "^4.6.0"
+    "@generative-music/piece-meditation" "^4.6.0"
+    "@generative-music/piece-moment" "^4.6.0"
+    "@generative-music/piece-nakaii" "^4.5.0"
+    "@generative-music/piece-neuroplasticity" "^4.6.0"
+    "@generative-music/piece-no-refrain" "^4.6.0"
+    "@generative-music/piece-observable-streams" "^4.6.0"
+    "@generative-music/piece-otherness" "^4.5.0"
+    "@generative-music/piece-oxalis-1" "^4.6.0"
+    "@generative-music/piece-peace" "^4.6.0"
+    "@generative-music/piece-pinwheels" "^4.6.0"
+    "@generative-music/piece-pulse-code-modulation" "^4.6.0"
+    "@generative-music/piece-remembering" "^4.6.0"
+    "@generative-music/piece-return-to-form" "^4.6.0"
+    "@generative-music/piece-ritual" "^4.6.0"
+    "@generative-music/piece-sevenths" "^4.6.0"
+    "@generative-music/piece-soundtrack" "^4.6.0"
+    "@generative-music/piece-spring-again" "^4.6.0"
+    "@generative-music/piece-stratospheric" "^4.6.0"
+    "@generative-music/piece-stream-of-consciousness" "^4.6.0"
+    "@generative-music/piece-substrate" "^4.5.0"
+    "@generative-music/piece-timbral-oscillations" "^4.6.0"
+    "@generative-music/piece-townsend" "^4.6.0"
+    "@generative-music/piece-transmission" "^4.6.0"
+    "@generative-music/piece-trees" "^4.6.0"
+    "@generative-music/piece-uun" "^4.6.0"
+    "@generative-music/piece-western-medicine" "^4.5.0"
+    "@generative-music/piece-yesterday" "^4.6.0"
+    "@generative-music/piece-zed" "^4.5.0"
+
+"@generative-music/samples-alex-bainter@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/samples-alex-bainter/-/samples-alex-bainter-2.3.0.tgz#6583f08f6848cac48ccb9c851b1577417f2b6595"
+  integrity sha512-s6BfsSS+Jmd0jpZOaB8YtVz+9DMHrwySnTGyOxGTqi0SgMX+8M54BxJ48xVp+HjmjuUoGZhk7GuJY8GXH7+wOA==
+
+"@generative-music/utilities@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/utilities/-/utilities-4.5.0.tgz#0d419a725ea6d9bf2ae64cad01d067cc96b43a65"
+  integrity sha512-BolG0thEnHfYeMXDuX9faM9yZaXrdMHQVRC2WqCxHzkuBEhAWKWubN8UCZsI/Cr8QBcN61Ff2n6gEF7vL/yErQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+
+"@generative-music/web-library@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@generative-music/web-library/-/web-library-0.2.1.tgz#9d44667c40fbd550a0da9247ee1cf875f1ad0efe"
+  integrity sha512-6o3rgxfCQD1GK1LWmBSyzhLIT/bjeCHe8N86lexDsQi/o0io+sabeVHP3IqgfZd12xAEoE46yWLAGjVdSz/aoQ==
+  dependencies:
+    "@alexbainter/indexed-db" "^0.1.0"
+
+"@generative-music/web-provider@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@generative-music/web-provider/-/web-provider-2.0.4.tgz#b68d55dc4973b973b95c8305bbed3880f9877d8d"
+  integrity sha512-UkKKZIsA9YqFLic8z0/eWiSFrOWng2XgrM1jJH21VIi6jAN/WwSIj6m8myXVbKI1BvDMSJKSpwjS2hl+r8v/FA==
+  dependencies:
+    "@alexbainter/indexed-db" "^0.1.1"
+    lamejs "^1.2.0"
 
 "@iarna/toml@^2.2.0":
   version "2.2.5"
@@ -1470,6 +2024,14 @@ atob@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
+
+automation-events@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/automation-events/-/automation-events-3.0.4.tgz#5024ea21badf563babf737e6488c6df2ea4a3df1"
+  integrity sha512-9nS1DduiY/5Gfd44c2HvcH/y4l9UWc4RfbmVngrB20zmNZCLkOH6TmAkiJtUbyoHmv6bFPFY9sYQnlsVCRzYWw==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    tslib "^2.1.0"
 
 aws-sign2@~0.7.0:
   version "0.7.0"
@@ -3600,6 +4162,11 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
+javascript-stringify@^1.1.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-1.6.0.tgz#142d111f3a6e3dae8f4a9afd77d45855b5a9cce3"
+  integrity sha1-FC0RHzpuPa6PSpr9d9RYVbWpzOM=
+
 js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -3733,6 +4300,13 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
+lamejs@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/lamejs/-/lamejs-1.2.0.tgz#0259f83db4666141a7b671b8caa6369d95177d08"
+  integrity sha1-Aln4PbRmYUGntnG4yqY2nZUXfQg=
+  dependencies:
+    use-strict "1.0.1"
+
 levn@~0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/levn/-/levn-0.3.0.tgz#3b09924edf9f083c0490fdd4c0bc4421e04764ee"
@@ -3855,6 +4429,13 @@ map-visit@^1.0.0:
   integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
   dependencies:
     object-visit "^1.0.0"
+
+markov-chains@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/markov-chains/-/markov-chains-1.0.2.tgz#49105365981b8b910309904413982b696a2f7c14"
+  integrity sha1-SRBTZZgbi5EDCZBEE5graWovfBQ=
+  dependencies:
+    javascript-stringify "^1.1.0"
 
 md5.js@^1.3.4:
   version "1.3.5"
@@ -5312,7 +5893,7 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rxjs@^6.6.2:
+rxjs@^6.4.0, rxjs@^6.6.2:
   version "6.6.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.3.tgz#8ca84635c4daa900c0d3967a6ee7ac60271ee552"
   integrity sha512-trsQc+xYYXZ3urjOiJOuCOa5N3jAZ3eiSpQB5hIT8zGlL2QfnHLJ2r7GMkBGuIausdJN1OneaI6gQlsqNHHmZQ==
@@ -5471,6 +6052,11 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
+shuffle-array@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/shuffle-array/-/shuffle-array-1.0.1.tgz#c4ff3cfe74d16f93730592301b25e6577b12898b"
+  integrity sha1-xP88/nTRb5NzBZIwGyXmV3sSiYs=
+
 signal-exit@^3.0.2:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
@@ -5601,6 +6187,15 @@ stable@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
   integrity sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==
+
+standardized-audio-context@^25.1.8:
+  version "25.1.9"
+  resolved "https://registry.yarnpkg.com/standardized-audio-context/-/standardized-audio-context-25.1.9.tgz#110d3e8adc2b142b5e0553cdd0685f11bf62460b"
+  integrity sha512-mSbAJL/WrkLt/R41v3RSXeL33iVWo1HR9D8/7KKPrQipNBgNrHVpx+N/KkBA7RXwPS69wMi7zl+TRhkCHI7oMg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    automation-events "^3.0.4"
+    tslib "^2.1.0"
 
 static-eval@^2.0.0:
   version "2.1.0"
@@ -5911,6 +6506,108 @@ toidentifier@1.0.0:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
 
+tonal-array@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tonal-array/-/tonal-array-2.2.2.tgz#809e2723cebf5c16eef575a7f4bdaaf07499abe4"
+  integrity sha512-h6YIq20L0EEU4EsDoKHAjl5kD2EQn467VfV79QHAuybvNCJpqqRNsQ3QNvoQyir1BgDXaDUIN9FEmQJNiaaCKA==
+  dependencies:
+    tonal-note "^2.2.2"
+
+tonal-chord@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tonal-chord/-/tonal-chord-2.2.2.tgz#a9868f3deb2a16d3fac3794158709d46a1c8778f"
+  integrity sha512-gOIXapi6Gx3ISRKdEJKEQjhDBiwjhaalyWSrN5rijGrSyyFFNZ+EVOfzcqLtnVAF9BgeO9Ca0eXCor3XpHdEJg==
+  dependencies:
+    tonal-dictionary "^2.2.2"
+    tonal-distance "^2.2.2"
+    tonal-note "^2.2.2"
+    tonal-pcset "^2.2.2"
+
+tonal-dictionary@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tonal-dictionary/-/tonal-dictionary-2.2.2.tgz#54bc92ee07680d9c96597f2d7b1b1fbe87574a13"
+  integrity sha512-283ppJl/0lohhlVPMI6t5C6XwaP5Wx0egu9qfG9TLCT2tn4pRwYpXkzGufd9icvkJTgOylOum3+RxWmywUIPIg==
+  dependencies:
+    tonal-array "^2.2.2"
+    tonal-note "^2.2.2"
+    tonal-pcset "^2.2.2"
+
+tonal-distance@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tonal-distance/-/tonal-distance-2.2.2.tgz#a9dcffc6d0a559d683c2f84c7b7f0fa3cd240e49"
+  integrity sha512-ktA6OapCxaetXJb/JuXD5QwfyB7/G3y3ONby7Kkbezyffc57cnNfjdhlTR9XBR7eSFIY/J1KuhLwMx/qrffT4g==
+  dependencies:
+    tonal-interval "^2.2.2"
+    tonal-note "^2.2.2"
+
+tonal-interval@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tonal-interval/-/tonal-interval-2.2.2.tgz#fe7058ace9c7e80d910a7b60d1d55a27950f0f5d"
+  integrity sha512-lrtDU8lH5IAX7YE63OhGGDRpVb4OoGxaN0wDu5XC3sUhXBwjSgNYpHY2D9JI2aWQ/Er9jhQbnw9b0ffkLy34+Q==
+
+tonal-key@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tonal-key/-/tonal-key-2.2.2.tgz#5ccbdff0e517fc50e85427cab4bd955abbad8778"
+  integrity sha512-KIc0b8yPl2ATDxF/65P52tIIempNsAQrug0idpD0zFvs5F5cb1hp7Rh7JJ4gECwC/6a3Hgdd1jomI+TnJ7K98w==
+  dependencies:
+    tonal-array "^2.2.2"
+    tonal-distance "^2.2.2"
+    tonal-note "^2.2.2"
+    tonal-roman-numeral "^2.2.2"
+
+tonal-note@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tonal-note/-/tonal-note-2.2.2.tgz#3aeeeeb0e227fd0da9fcbc8e811cf1109081da56"
+  integrity sha512-RNK3Nb8PxBEW9yYGStcoczgE8bCYFZ5zfLvYJjvuzLWiwTQmqWOhTzONVobVCGFZ/jgDNwpBEKe/bngL3g3Xfw==
+
+tonal-pcset@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tonal-pcset/-/tonal-pcset-2.2.2.tgz#8080a5998bd95ffc9c0419032e6c2b7f39df027d"
+  integrity sha512-PSqhkxzckO6J27W0GxawHYln4wvfDJ7puDmccksyFOBo97UhLnpxiyvBekhiYpkuaMtoZLQC/KALAkEj7lcb+A==
+  dependencies:
+    tonal-array "^2.2.2"
+    tonal-interval "^2.2.2"
+    tonal-note "^2.2.2"
+
+tonal-roman-numeral@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tonal-roman-numeral/-/tonal-roman-numeral-2.2.2.tgz#5f824eec1e5daa9f1c0f08a48b73e5a9cec9687e"
+  integrity sha512-+auQNObpW3OvsSqlo+Cc+0otrlEhtbEgpzkPoKbTtkCva0P9oSkSz0OZ9fI73KQM5MsBs1XbB+olxppWkzYTFw==
+
+tonal-scale@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tonal-scale/-/tonal-scale-2.2.2.tgz#b7c97f8f9881033debda268c1eba4355415e3153"
+  integrity sha512-tDb3YCoTF50XOXq9kNhGB1JkInk7qAGN6GQnP/3xkGxkreFFRZyI58jfHlmWf/AH4+IKb/exsOmL6G8Ok/PCRw==
+  dependencies:
+    tonal-array "^2.2.2"
+    tonal-dictionary "^2.2.2"
+    tonal-distance "^2.2.2"
+    tonal-note "^2.2.2"
+    tonal-pcset "^2.2.2"
+
+tonal@^2.2.1, tonal@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tonal/-/tonal-2.2.2.tgz#dc8aabf9f981c8b74c4590e4b3ed662176705e8a"
+  integrity sha512-Ze2bQc6KhAf3FKM9HzEsQ4z8hZh4WYCOsCrryONqf/THGOrOpL9Cc8Uc0dq0OA2yK2JbD5FhZckEXNYyD9946A==
+  dependencies:
+    tonal-array "^2.2.2"
+    tonal-chord "^2.2.2"
+    tonal-dictionary "^2.2.2"
+    tonal-distance "^2.2.2"
+    tonal-interval "^2.2.2"
+    tonal-key "^2.2.2"
+    tonal-note "^2.2.2"
+    tonal-pcset "^2.2.2"
+    tonal-scale "^2.2.2"
+
+tone@^14.7.77:
+  version "14.7.77"
+  resolved "https://registry.yarnpkg.com/tone/-/tone-14.7.77.tgz#12a2a9f033952ccdb552275a6384ca5d36d4b5ed"
+  integrity sha512-tCfK73IkLHyzoKUvGq47gyDyxiKLFvKiVCOobynGgBB9Dl0NkxTM2p+eRJXyCYrjJwy9Y0XCMqD3uOYsYt2Fdg==
+  dependencies:
+    standardized-audio-context "^25.1.8"
+    tslib "^2.0.1"
+
 tough-cookie@^2.3.3, tough-cookie@^2.5.0, tough-cookie@~2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-2.5.0.tgz#cd9fb2a0aa1d5a12b473bd9fb96fa3dcff65ade2"
@@ -5930,6 +6627,11 @@ tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
+
+tslib@^2.0.1, tslib@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
 tty-browserify@0.0.0:
   version "0.0.0"
@@ -6068,6 +6770,11 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
+
+use-strict@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/use-strict/-/use-strict-1.0.1.tgz#0bb80d94f49a4a05192b84a8c7d34e95f1a7e3a0"
+  integrity sha1-C7gNlPSaSgUZK4Sox9NOlfGn46A=
 
 use@^3.1.0:
   version "3.1.1"

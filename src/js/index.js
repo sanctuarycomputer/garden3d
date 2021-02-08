@@ -1,4 +1,5 @@
 'use strict';
+
 import background from './background';
 import audio from './audio';
 import shimmer from './shimmer';
