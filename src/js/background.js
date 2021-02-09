@@ -7,6 +7,7 @@ import goodBg from '/assets/images/bg-good.jpg';
 import evilBg from '/assets/images/bg-evil.jpg';
 
 const clouds = 'https://res.cloudinary.com/dvxikybyi/image/upload/v1486634113/2yYayZk_vqsyzx.png';
+const waves = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/disp5.jpg';
 
 export default (function () {
   const Background = {
@@ -30,7 +31,7 @@ export default (function () {
     state: {
       count: 0,
       activeTheme: Theme.GOOD,
-      direction: Direction.UP,
+      direction: Direction.DOWN,
     },
     elements: {
       background: document.getElementById('Background'),
@@ -49,7 +50,7 @@ export default (function () {
       Background.pixi.backgroundGood = new PIXI.Sprite(Background.pixi.textureGood);
       Background.pixi.backgroundEvil = new PIXI.Sprite(Background.pixi.textureEvil);
 
-      Background.pixi.displacementSprite = PIXI.Sprite.from(clouds);
+      Background.pixi.displacementSprite = PIXI.Sprite.from(waves);
       Background.pixi.displacementFilter = new PIXI.filters.DisplacementFilter(
         Background.pixi.displacementSprite
       );
@@ -68,6 +69,7 @@ export default (function () {
       Background.pixi.stage.addChild(Background.pixi.backgroundEvil);
       Background.pixi.stage.addChild(Background.pixi.backgroundGood);
       Background.pixi.stage.addChild(Background.pixi.transitionSprite);
+      Background.pixi.app.renderer.view.style.transform = 'scale(1.02)';
 
       window.addEventListener('resize', Background.resize);
     },
@@ -75,19 +77,12 @@ export default (function () {
     animate() {
       requestAnimationFrame(Background.animate);
 
-      if (Background.state.activeTheme === Theme.GOOD) {
-        Background.pixi.displacementSprite.scale.set(0.5);
-        Background.pixi.displacementFilter.scale.set(20);
-        Background.pixi.transitionSprite.scale.set(0.5);
-        Background.pixi.transitionFilter.scale.set(20);
-      } else {
-        Background.pixi.displacementSprite.scale.set(0.5);
-        Background.pixi.displacementFilter.scale.set(50);
-        Background.pixi.transitionSprite.scale.set(0.5);
-        Background.pixi.transitionFilter.scale.set(50);
-      }
-      Background.pixi.displacementSprite.x = Background.state.count * 10;
-      Background.pixi.displacementSprite.y = Background.state.count * 10;
+      Background.pixi.displacementSprite.scale.set(1);
+      Background.pixi.displacementFilter.scale.set(50);
+      Background.pixi.transitionSprite.scale.set(1);
+      Background.pixi.transitionFilter.scale.set(50);
+
+      Background.pixi.displacementSprite.setTransform(0, Background.state.count * 5);
 
       Background.updateCount();
       Background.pixi.stage.filters = [
@@ -99,9 +94,9 @@ export default (function () {
 
     updateCount() {
       if (Background.state.direction === Direction.UP) {
-        Background.state.count -= 0.05;
+        Background.state.count -= 0.1;
       } else {
-        Background.state.count += 0.05;
+        Background.state.count += 0.1;
       }
     },
 
@@ -110,15 +105,21 @@ export default (function () {
     },
 
     makeGood() {
-      Background.state.activeTheme = Theme.GOOD;
-      Background.state.direction = Direction.UP;
       Background.transitionSlide(2, Operator.SUBTRACT);
+      Background.state.activeTheme = Theme.GOOD;
     },
 
     makeEvil() {
-      Background.state.activeTheme = Theme.EVIL;
-      Background.state.direction = Direction.DOWN;
       Background.transitionSlide(1, Operator.ADD);
+      Background.state.activeTheme = Theme.EVIL;
+    },
+
+    updateDirection() {
+      if (Background.state.direction === Direction.DOWN) {
+        Background.state.direction = Direction.UP;
+      } else {
+        Background.state.direction = Direction.DOWN;
+      }
     },
 
     transitionSlide(slideIndex, direction) {
@@ -126,10 +127,11 @@ export default (function () {
         duration: (500 * 2) / 1000,
         alpha: 0,
         ease: 'power3.out',
+        onStart: Background.updateDirection,
       });
 
       gsap.to(Background.pixi.transitionSprite, {
-        duration: (1000 * 2) / 1000,
+        duration: (2000 * 2) / 1000,
         rotation: `${direction + 0.2}`,
         ease: 'power3.out',
       });
