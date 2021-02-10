@@ -76,10 +76,10 @@ export default (function () {
     animate() {
       requestAnimationFrame(Background.animate);
 
-      Background.pixi.displacementSprite.scale.set(1);
-      Background.pixi.displacementFilter.scale.set(50);
-      Background.pixi.transitionSprite.scale.set(1);
-      Background.pixi.transitionFilter.scale.set(50);
+      Background.pixi.displacementSprite.scale.set(0.75);
+      Background.pixi.displacementFilter.scale.set(25);
+      Background.pixi.transitionSprite.scale.set(0.75);
+      Background.pixi.transitionFilter.scale.set(25);
 
       Background.pixi.displacementSprite.setTransform(0, Background.state.count * 5);
 
