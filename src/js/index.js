@@ -2,6 +2,7 @@
 
 import background from './background';
 import audio from './audio';
+import audio2 from './audio2';
 import shimmer from './shimmer';
 
 import { Theme } from './constants';
