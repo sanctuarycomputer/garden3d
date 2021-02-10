@@ -15,12 +15,12 @@ const handleToggleTheme = function () {
   if (activeTheme === Theme.GOOD) {
     document.body.setAttribute('data-theme', Theme.EVIL);
     shimmer.makeEvil();
-    audio2.play();
+    audio2.start();
     background.makeEvil();
   } else {
     document.body.setAttribute('data-theme', Theme.GOOD);
     shimmer.makeGood();
-    audio2.play();
+    audio2.start();
     background.makeGood();
   }
 };

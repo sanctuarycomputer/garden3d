@@ -1412,6 +1412,13 @@
   dependencies:
     "@babel/runtime" "^7.12.5"
 
+"@generative-music/utilities@^4.7.0":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@generative-music/utilities/-/utilities-4.7.0.tgz#a33f3521e6ea0c0052a26b5238fc7234db782cf6"
+  integrity sha512-hUXe7OTAY5A2gBFApkk2tPWkM6vsXKQDkIMO3hA8c4Dic2/gWub0Qh+LlzQ5of5qalgkvTWrgAft9P3/VXLMSA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+
 "@generative-music/web-library@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@generative-music/web-library/-/web-library-0.2.1.tgz#9d44667c40fbd550a0da9247ee1cf875f1ad0efe"

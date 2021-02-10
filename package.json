@@ -9,6 +9,7 @@
     "@generative-music/piece-zed": "^4.5.0",
     "@generative-music/pieces-alex-bainter": "^4.6.1",
     "@generative-music/samples-alex-bainter": "^2.3.0",
+    "@generative-music/utilities": "^4.7.0",
     "@generative-music/web-library": "^0.2.1",
     "@generative-music/web-provider": "^2.0.4",
     "@sanctucompu/basement": "^1.2.0",

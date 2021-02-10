@@ -3,10 +3,14 @@
 // import createWebProvider from '@generative-music/web-provider';
 // import createWebLibrary from '@generative-music/web-library';
 import * as Tone from 'tone';
+import { getRandomNumberBetween, toss, invert, major9th } from '@generative-music/utilities';
 
-import A2 from '/assets/audio/vsco2-harp/a2.wav';
+import Harp from './samples';
 
-import goodBg from '/assets/images/bg-good.jpg';
+const OCTAVES = [1, 2, 3];
+const MIN_REPEAT_S = 2;
+const MAX_REPEAT_S = 20;
+const NOTES = toss(invert(major9th('Db'), 1), OCTAVES);
 
 export default (function () {
   const Audio = {
@@ -20,22 +24,38 @@ export default (function () {
      */
 
     _init() {
+      window.generativeMusic = window.generativeMusic || {};
+      window.generativeMusic.rng = window.generativeMusic.rng || Math.random;
+
       Audio._createSampler();
     },
 
     _createSampler() {
-      Audio.sampler = new Tone.Sampler({ A2 }, Audio._onSamplerLoaded).toDestination();
+      Audio.sampler = new Tone.Sampler(Harp, Audio._onSamplerLoaded).toDestination();
     },
 
     _onSamplerLoaded() {
       console.log('loaded');
       Audio.state.isLoaded = true;
+      Audio.play();
     },
 
     play() {
       if (Audio.state.isLoaded) {
-        Audio.sampler.triggerAttackRelease(['A2'], 0.5);
+        NOTES.forEach((note) => {
+          const interval = getRandomNumberBetween(MIN_REPEAT_S, MAX_REPEAT_S);
+          const delay = getRandomNumberBetween(0, MAX_REPEAT_S - MIN_REPEAT_S);
+          const playNote = () => Audio.sampler.triggerAttack(note, '+1');
+          Tone.Transport.scheduleRepeat(playNote, interval, `+${delay}`);
+        });
+
+        return Audio.sampler.releaseAll(0);
       }
+    },
+
+    start() {
+      Tone.Transport.start();
+      Tone.start();
     },
   };
 
