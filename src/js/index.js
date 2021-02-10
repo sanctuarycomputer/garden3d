@@ -1,7 +1,7 @@
 'use strict';
 
 import background from './background';
-import audio from './audio';
+// import audio from './audio';
 import audio2 from './audio2';
 import shimmer from './shimmer';
 
@@ -15,12 +15,12 @@ const handleToggleTheme = function () {
   if (activeTheme === Theme.GOOD) {
     document.body.setAttribute('data-theme', Theme.EVIL);
     shimmer.makeEvil();
-    audio.makeEvil();
+    audio2.play();
     background.makeEvil();
   } else {
     document.body.setAttribute('data-theme', Theme.GOOD);
     shimmer.makeGood();
-    audio.makeGood();
+    audio2.play();
     background.makeGood();
   }
 };
