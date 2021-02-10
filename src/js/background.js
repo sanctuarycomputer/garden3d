@@ -69,7 +69,6 @@ export default (function () {
       Background.pixi.stage.addChild(Background.pixi.backgroundEvil);
       Background.pixi.stage.addChild(Background.pixi.backgroundGood);
       Background.pixi.stage.addChild(Background.pixi.transitionSprite);
-      Background.pixi.app.renderer.view.style.transform = 'scale(1.02)';
 
       window.addEventListener('resize', Background.resize);
     },
