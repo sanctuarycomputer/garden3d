@@ -77,7 +77,7 @@ export default (function () {
       requestAnimationFrame(Background.animate);
 
       Background.pixi.displacementSprite.scale.set(1);
-      Background.pixi.displacementFilter.scale.set(50);
+      Background.pixi.displacementFilter.scale.set(17.5);
       Background.pixi.transitionSprite.scale.set(1);
       Background.pixi.transitionFilter.scale.set(50);
 
