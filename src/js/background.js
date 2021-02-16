@@ -18,7 +18,7 @@ export default (function () {
         autoResize: true,
       }),
       loader: new PIXI.Loader(),
-      stage: null,
+      stage: new PIXI.Container(),
       textureGood: null,
       textureEvil: null,
       textureClouds: null,
@@ -100,7 +100,6 @@ export default (function () {
     },
 
     _setupLayers() {
-      Background.pixi.stage = new PIXI.Container();
       Background.elements.background.appendChild(Background.pixi.app.view);
       Background.pixi.stage.addChild(Background.pixi.displacementSprite);
       Background.pixi.stage.addChild(Background.pixi.backgroundEvil);
