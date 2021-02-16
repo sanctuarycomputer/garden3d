@@ -1,7 +1,7 @@
 .Hero {
   position: relative;
   color: var(--fill-color);
-  transition: $theme-transition;
+  opacity: 0;
 
   &__audio {
     position: absolute;
