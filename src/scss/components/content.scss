@@ -1,6 +1,7 @@
 .Content {
   color: var(--text-color);
-  transition: $theme-transition;
+  opacity: 0;
+  transform: translateY(10px);
 
   .Garden3d {
     svg {
