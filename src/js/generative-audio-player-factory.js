@@ -23,7 +23,7 @@ const DARK_EQ_SETTINGS = {
   lowFrequency: 150,
   highFrequency: 750,
   mid: -3,
-  low: -1.5,
+  low: -3,
 };
 const DARK_MODE_PULLBACK_CUTOFF_FREQUENCY = 100; // hertz
 const DARK_PITCH_SHIFT = -36; // semitones
