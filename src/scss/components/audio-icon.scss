@@ -1,5 +1,6 @@
 .AudioIcon {
   cursor: pointer;
+  visibility: hidden;
 
   &__path {
     stroke: currentColor;
@@ -9,6 +10,12 @@
     .AudioIcon__path {
       stroke: currentColor;
       fill: currentColor;
+    }
+  }
+
+  &--is-ready {
+    .AudioIcon {
+      visibility: visible;
     }
   }
 
