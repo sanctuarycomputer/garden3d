@@ -1,0 +1,12 @@
+export { default as A4 } from './a4.mp3';
+export { default as A5 } from './a5.mp3';
+export { default as A6 } from './a6.mp3';
+export { default as A7 } from './a7.mp3';
+export { default as Csharp4 } from './csharp4.mp3';
+export { default as Csharp5 } from './csharp5.mp3';
+export { default as Csharp6 } from './csharp6.mp3';
+export { default as Csharp7 } from './csharp7.mp3';
+export { default as F4 } from './f4.mp3';
+export { default as F5 } from './f5.mp3';
+export { default as F6 } from './f6.mp3';
+export { default as F7 } from './f7.mp3';
