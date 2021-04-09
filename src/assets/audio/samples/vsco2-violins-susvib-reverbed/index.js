@@ -1,0 +1,10 @@
+export { default as B6 } from './b6.mp3';
+export { default as C4 } from './c4.mp3';
+export { default as C5 } from './c5.mp3';
+export { default as C6 } from './c6.mp3';
+export { default as E4 } from './e4.mp3';
+export { default as E5 } from './e5.mp3';
+export { default as E6 } from './e6.mp3';
+export { default as G4 } from './g4.mp3';
+export { default as G5 } from './g5.mp3';
+export { default as G6 } from './g6.mp3';
