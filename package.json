@@ -3,7 +3,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "NODE_ENV=production parcel build src/*.html"
+    "build": "NODE_ENV=production parcel build src/*.html --public-url=www.garden3d.net"
   },
   "dependencies": {
     "@generative-music/utilities": "^5.1.0",
