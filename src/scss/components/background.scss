@@ -2,4 +2,9 @@
   z-index: -1;
   object-fit: cover;
   opacity: 0;
+  transition: opacity 500ms ease-in-out;
+
+  &--active {
+    opacity: 1;
+  }
 }

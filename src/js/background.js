@@ -168,29 +168,9 @@ export default (function () {
     },
 
     _fadeIn() {
-      gsap.to('#Background', {
-        duration: 2,
-        opacity: 1,
-        rotate: 0.01,
-        ease: 'power3.out',
-      });
+      const Background = document.getElementById('Background');
 
-      gsap.to('#Hero', {
-        duration: 1,
-        delay: 1.5,
-        opacity: 1,
-        rotate: 0.01,
-        ease: 'power3.out',
-      });
-
-      gsap.to('#Content', {
-        duration: 1,
-        delay: 2,
-        opacity: 1,
-        y: 0,
-        rotate: 0.01,
-        ease: 'power3.out',
-      });
+      Background.classList.add('Background--active');
     },
 
     /**
