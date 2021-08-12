@@ -1,3 +1,16 @@
+/**
+  Small Hack:
+  When the page loads, we want the backgorund color to remain white
+  up until the DOM fades in. At which point, we update the --backround-color var
+  to match the initial theme fill color
+
+  this also requires us to manually update the --background-color var
+  when the theme switches
+*/
+:root {
+  --background-color: #{color('white')};
+}
+
 /** Good Theme */
 [data-theme='good'] {
   --fill-color: #{color('blue')};
