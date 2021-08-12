@@ -4,6 +4,10 @@
 @import 'components/hero', 'components/background', 'components/content', 'components/audio-icon',
   'components/product-grid';
 
+::selection {
+  background-color: #{var(--background-color)};
+}
+
 html {
   background-color: #{var(--background-color)};
 }

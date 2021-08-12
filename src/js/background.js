@@ -1,7 +1,7 @@
 import * as PIXI from 'pixi.js';
 import gsap from 'gsap';
 
-import { Direction, Theme, Operator, Color } from './constants';
+import { Direction, Theme, Operator } from './constants';
 
 import goodBg from '/assets/images/bg-good.jpg';
 import evilBg from '/assets/images/bg-evil.jpg';
@@ -168,18 +168,9 @@ export default (function () {
     },
 
     _fadeIn() {
-      const root = document.documentElement;
       const Background = document.getElementById('Background');
 
       Background.classList.add('Background--active');
-
-      /**
-       * This setTimeout waits a couple seconds for the background animation to fade in
-       * before setting the initial --background-color variable to the default theme color (Good)
-       */
-      setTimeout(() => {
-        root.style.setProperty('--background-color', Color.GOOD);
-      }, 2000);
     },
 
     /**

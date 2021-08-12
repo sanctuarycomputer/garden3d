@@ -3,11 +3,6 @@ export const Theme = {
   EVIL: 'evil',
 };
 
-export const Color = {
-  EVIL: '#eddb35',
-  GOOD: '#1f35de',
-};
-
 export const Operator = {
   ADD: '+=',
   SUBTRACT: '-=',

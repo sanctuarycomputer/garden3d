@@ -4,24 +4,21 @@ import audio from './audio';
 import shimmer from './shimmer';
 import fav from './fav';
 
-import { Theme, Color } from './constants';
+import { Theme } from './constants';
 
 const themeToggle = document.querySelector('[data-trigger="theme-toggle"]');
 
 const handleToggleTheme = function () {
-  const root = document.documentElement;
   const activeTheme = document.documentElement.getAttribute('data-theme');
 
   if (activeTheme === Theme.GOOD) {
     document.documentElement.setAttribute('data-theme', Theme.EVIL);
-    root.style.setProperty('--background-color', Color.EVIL);
     fav.makeEvil();
     shimmer.makeEvil();
     audio.makeEvil();
     background.makeEvil();
   } else {
     document.documentElement.setAttribute('data-theme', Theme.GOOD);
-    root.style.setProperty('--background-color', Color.GOOD);
     fav.makeGood();
     shimmer.makeGood();
     audio.makeGood();

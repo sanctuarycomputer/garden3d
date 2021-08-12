@@ -3,7 +3,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "NODE_ENV=production parcel build src/*.html --public-url=https://garden3d-c526d--pr57-qa-56-hugh-general-m69fmuam.web.app/"
+    "build": "NODE_ENV=production parcel build src/*.html"
   },
   "dependencies": {
     "@generative-music/utilities": "^5.1.0",
