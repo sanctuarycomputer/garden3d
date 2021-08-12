@@ -2,6 +2,11 @@
   position: relative;
   color: var(--fill-color);
   opacity: 0;
+  transition: opacity 500ms ease-in-out;
+
+  &--active {
+    opacity: 1;
+  }
 
   &__audio {
     position: absolute;

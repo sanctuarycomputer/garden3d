@@ -4,21 +4,24 @@ import audio from './audio';
 import shimmer from './shimmer';
 import fav from './fav';
 
-import { Theme } from './constants';
+import { Theme, Color } from './constants';
 
 const themeToggle = document.querySelector('[data-trigger="theme-toggle"]');
 
 const handleToggleTheme = function () {
-  const activeTheme = document.body.getAttribute('data-theme');
+  const root = document.documentElement;
+  const activeTheme = document.documentElement.getAttribute('data-theme');
 
   if (activeTheme === Theme.GOOD) {
-    document.body.setAttribute('data-theme', Theme.EVIL);
+    document.documentElement.setAttribute('data-theme', Theme.EVIL);
+    root.style.setProperty('--background-color', Color.EVIL);
     fav.makeEvil();
     shimmer.makeEvil();
     audio.makeEvil();
     background.makeEvil();
   } else {
-    document.body.setAttribute('data-theme', Theme.GOOD);
+    document.documentElement.setAttribute('data-theme', Theme.GOOD);
+    root.style.setProperty('--background-color', Color.GOOD);
     fav.makeGood();
     shimmer.makeGood();
     audio.makeGood();
@@ -26,4 +29,18 @@ const handleToggleTheme = function () {
   }
 };
 
+(() => {
+  const Hero = document.getElementById('Hero');
+  const Content = document.getElementById('Content');
+
+  Hero.classList.add('Hero--active');
+  Content.classList.add('Content--active');
+})();
+
 themeToggle.addEventListener('click', handleToggleTheme);
+
+/** Credit Alex Bainter */
+
+console.log(
+  'CREDIT: Thanks to Alex Bainter for the generative music. Find him on Twitter at: https://twitter.com/alex_bainter and check out more generative sounds at: https://generative.fm/'
+);
