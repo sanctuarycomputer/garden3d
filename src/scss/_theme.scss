@@ -1,4 +1,16 @@
-/** Good Theme */
+[data-theme] {
+  --fill-color: #{color('blue')};
+  --text-color: #{color('blue')};
+  --hover-text-color: #{color('white')};
+  --background-color: #{color('light')};
+  @media (prefers-color-scheme: dark) {
+    --fill-color: #{color('yellow')};
+    --text-color: #{color('yellow')};
+    --hover-text-color: #{color('black')};
+    --background-color: #{color('dark')};
+  }
+}
+
 [data-theme='good'] {
   --fill-color: #{color('blue')};
   --text-color: #{color('blue')};

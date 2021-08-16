@@ -18,5 +18,11 @@
       background-color: #{var(--fill-color)};
       color: var(--hover-text-color);
     }
+
+    &.light {
+      span {
+        padding-top: 7px;
+      }
+    }
   }
 }

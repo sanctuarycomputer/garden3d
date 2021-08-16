@@ -27,6 +27,12 @@ const handleToggleTheme = function () {
 };
 
 (() => {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', Theme.EVIL);
+  } else {
+    document.documentElement.setAttribute('data-theme', Theme.GOOD);
+  }
+
   const Hero = document.getElementById('Hero');
   const Content = document.getElementById('Content');
 
