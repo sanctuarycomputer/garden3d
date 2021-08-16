@@ -62,6 +62,7 @@ export default (function () {
       Background._setupFilters();
       Background._setupLayers();
       Background._animate();
+      Background._selectInitialTheme();
       Background._fadeIn();
     },
 
@@ -167,9 +168,30 @@ export default (function () {
       });
     },
 
+    _selectInitialTheme() {
+      // index.js sets this, so to avoid race conditions,
+      // we first see if it's set. If not, we default to
+      // checking the CSS property
+      const activeTheme = document.documentElement.getAttribute('data-theme');
+
+      if (activeTheme) {
+        if (activeTheme === Theme.GOOD) {
+          Background.makeGood();
+        } else {
+          Background.makeEvil();
+        }
+        return;
+      }
+
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        Background.makeEvil();
+      } else {
+        Background.makeGood();
+      }
+    },
+
     _fadeIn() {
       const Background = document.getElementById('Background');
-
       Background.classList.add('Background--active');
     },
 
