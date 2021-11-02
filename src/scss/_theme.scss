@@ -26,12 +26,16 @@
   --background-color: #{color('dark')};
 }
 
-.text-glow {
-  text-shadow: 0 0 5px var(--text-color);
+.box-glow {
+  box-shadow: 0 0 3px var(--fill-color);
 }
 
-.text-glow--hover {
-  &:hover {
-    text-shadow: 0 0 5px var(--hover-text-color);
+.text-glow {
+  text-shadow: 0 0 5px var(--text-color);
+
+  &--hover {
+    &:hover {
+      text-shadow: 0 0 5px var(--hover-text-color);
+    }
   }
 }

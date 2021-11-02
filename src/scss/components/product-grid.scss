@@ -5,7 +5,15 @@
   gap: 6px;
   height: 100%;
 
+  @include media('md-up') {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
   @include media('lg-up') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media('xxl-up') {
     grid-template-columns: repeat(6, 1fr);
   }
 

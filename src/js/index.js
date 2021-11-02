@@ -6,31 +6,43 @@ import fav from './fav';
 
 import { Theme } from './constants';
 
+const setThemeEvil = () => {
+  document.documentElement.setAttribute('data-theme', Theme.EVIL);
+  fav.makeEvil();
+  shimmer.makeEvil();
+  audio.makeEvil();
+  background.makeEvil();
+};
+
+const setThemeGood = () => {
+  document.documentElement.setAttribute('data-theme', Theme.GOOD);
+  fav.makeGood();
+  shimmer.makeGood();
+  audio.makeGood();
+  background.makeGood();
+};
+
+// Theme toggle
 const themeToggle = document.querySelector('[data-trigger="theme-toggle"]');
 
 const handleToggleTheme = function () {
   const activeTheme = document.documentElement.getAttribute('data-theme');
 
   if (activeTheme === Theme.GOOD) {
-    document.documentElement.setAttribute('data-theme', Theme.EVIL);
-    fav.makeEvil();
-    shimmer.makeEvil();
-    audio.makeEvil();
-    background.makeEvil();
+    setThemeEvil();
   } else {
-    document.documentElement.setAttribute('data-theme', Theme.GOOD);
-    fav.makeGood();
-    shimmer.makeGood();
-    audio.makeGood();
-    background.makeGood();
+    setThemeGood();
   }
 };
 
+themeToggle.addEventListener('click', handleToggleTheme);
+
+// Init
 (() => {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.documentElement.setAttribute('data-theme', Theme.EVIL);
+    setThemeEvil();
   } else {
-    document.documentElement.setAttribute('data-theme', Theme.GOOD);
+    setThemeGood();
   }
 
   const Hero = document.getElementById('Hero');
@@ -39,8 +51,6 @@ const handleToggleTheme = function () {
   Hero.classList.add('Hero--active');
   Content.classList.add('Content--active');
 })();
-
-themeToggle.addEventListener('click', handleToggleTheme);
 
 /** Credit Alex Bainter */
 

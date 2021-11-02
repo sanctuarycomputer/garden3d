@@ -10,10 +10,10 @@
 
   &__audio {
     position: absolute;
-    bottom: -50px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
 
-    @include media('md-up') {
+    @include media('xl-up') {
       bottom: auto;
       top: 0;
     }
