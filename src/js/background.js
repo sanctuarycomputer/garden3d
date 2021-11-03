@@ -8,6 +8,21 @@ import evilBg from '/assets/images/bg-evil.jpg';
 import clouds from '/assets/images/clouds.png';
 import waves from '/assets/images/waves.jpg';
 
+function backgroundCover(elementSizes, containerSizes) {
+  const elementRatio = elementSizes.width / elementSizes.height,
+    containerRatio = containerSizes.width / containerSizes.height;
+  let width = null,
+    height = null;
+  if (containerRatio > elementRatio) {
+    width = Math.ceil(containerSizes.width);
+    height = Math.ceil(containerSizes.width / elementRatio);
+  } else {
+    width = Math.ceil(containerSizes.height * elementRatio);
+    height = Math.ceil(containerSizes.height);
+  }
+  return { width, height };
+}
+
 export default (function () {
   const Background = {
     pixi: {
@@ -63,6 +78,7 @@ export default (function () {
       Background._setupLayers();
       Background._animate();
       Background._selectInitialTheme();
+      Background._resize();
       Background._fadeIn();
     },
 
@@ -136,6 +152,32 @@ export default (function () {
     },
 
     _resize() {
+      const { width: evilWidth, height: evilHeight } = backgroundCover(
+        {
+          width: Background.pixi.backgroundEvil.width,
+          height: Background.pixi.backgroundEvil.height,
+        },
+        {
+          width: window.innerWidth,
+          height: window.innerHeight,
+        }
+      );
+      Background.pixi.backgroundEvil.width = evilWidth;
+      Background.pixi.backgroundEvil.height = evilHeight;
+
+      const { width: goodWidth, height: goodHeight } = backgroundCover(
+        {
+          width: Background.pixi.backgroundGood.width,
+          height: Background.pixi.backgroundGood.height,
+        },
+        {
+          width: window.innerWidth,
+          height: window.innerHeight,
+        }
+      );
+      Background.pixi.backgroundGood.width = goodWidth;
+      Background.pixi.backgroundGood.height = goodHeight;
+
       Background.pixi.app.renderer.resize(window.innerWidth, window.innerHeight);
     },
 
